@@ -1,0 +1,88 @@
+/* Estilos básicos y atractivos */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    margin:0;
+    padding:0;
+  }
+  
+  header {
+    background-color: #222;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+  }
+  
+  header h1 {
+    margin-bottom:5px;
+  }
+  
+  main {
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+  }
+  
+  section {
+    background-color:#fff;
+    border-radius:8px;
+    padding:15px;
+    margin-bottom:20px;
+  }
+  
+  h2 {
+    margin-top:0;
+  }
+  
+  form {
+    display:flex;
+    flex-direction:column;
+  }
+  
+  label {
+    margin-top:10px;
+  }
+  
+  input, select {
+    padding:8px;
+    margin-top:5px;
+   border-radius:4px; 
+   border:1px solid #ccc; 
+   font-size:1em; 
+  }
+  
+  button {
+   margin-top:15px; 
+   padding:10px; 
+   border:none; 
+   border-radius:5px; 
+   background-color:#007bff; 
+   color:#fff; 
+   font-size:1em; 
+   cursor:pointer; 
+   transition:.3s ease;
+  }
+  button:hover { background-color:#0056b3; }
+  
+  #turnosContainer {
+   min-height:100px;
+   display:flex; flex-direction:column; gap:10px;
+  }
+  
+  .turno-card {
+   background:#e9ecef; padding:10px; border-radius:6px; display:flex; justify-content:space-between; align-items:center;
+  }
+  .turno-info { display:flex; flex-direction:column;}
+  .turno-nombre { font-weight:bold;}
+  .turno-servicio { font-style:italic;}
+  .btn-limpiar {
+   background-color:#dc3545 !important;
+   width:auto !important;
+   margin-top:auto !important;
+  
+  }
+  .btn-limpiar:hover { background-color:#a71d2a !important;}
+  
+  footer {
+   text-align:center; padding:15px; background:#222;color:#fff;margin-top:auto;}

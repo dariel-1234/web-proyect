@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Gestor de Turnos - Barbería</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>Barbería "Estilo Único"</h1>
+  <p>Gestiona tus turnos fácilmente</p>
+</header>
+
+<main>
+  <!-- Formulario para agendar turno -->
+  <section class="form-section">
+    <h2>Agendar Nuevo Turno</h2>
+    <form id="turnoForm">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" required />
+
+      <label for="fecha">Fecha:</label>
+      <input type="date" id="fecha" required />
+
+      <label for="hora">Hora:</label>
+      <input type="time" id="hora" required />
+
+      <label for="servicio">Servicio:</label>
+      <select id="servicio" required>
+        <option value="">Selecciona un servicio</option>
+        <option value="Corte de cabello">Corte de cabello</option>
+        <option value="Afeitado">Afeitado</option>
+        <option value="Arreglo de barba">Arreglo de barba</option>
+      </select>
+
+      <button type="submit">Agregar Turno</button>
+    </form>
+  </section>
+
+  <!-- Lista de turnos -->
+  <section class="lista-turnos">
+    <h2>Turnos Programados</h2>
+    <div id="turnosContainer">
+      <!-- Aquí se mostrarán los turnos -->
+    </div>
+  </section>
+
+  <!-- Botón para limpiar todos los turnos -->
+  <button id="limpiarBtn" class="btn-limpiar">Limpiar Todos los Turnos</button>
+
+</main>
+
+<footer>
+  2025 Barbería "Estilo Único"
+</footer>
+
+<script src="index.js"></script>
+
+</body>
+</html>
